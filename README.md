@@ -155,9 +155,12 @@ git commit -m "my changes!"
 git push origin
 
 # Edit remote... - then local:
-
-
+git pull
 ```
+
+
+
+
 
 More tools with pipx:
 
@@ -172,4 +175,4 @@ More tools with pipx:
 - isort ?
 - 
 
-TEST
+
