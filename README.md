@@ -18,6 +18,9 @@ sudo apt install build-essential git
 echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/marcello/.profile
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
+```
+
+```bash
 # Test
 brew doctor
 
@@ -84,7 +87,9 @@ libncursesw5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-d
 
 # Update
 brew update && brew upgrade pyenv  # update pyenv itself
+```
 
+```bash
 # Operate:
 pyenv install --list | less  # list all available Python versions (a lot!)
 pyenv install -v pypy3.9-7.3.9  # install Pypy 3.9-7.3.9
@@ -107,10 +112,44 @@ $ python -c "import ssl; print(ssl.OPENSSL_VERSION)"
 OpenSSL 1.1.1o  3 May 2022
 $ pyenv version
 3.10.4 (set by /home/packetdiver/.pyenv/version)
-
 ```
 
+## [GitHub CLI](https://cli.github.com/)
 
+[Help](https://cli.github.com/manual/)
+
+```bash
+# Prepare:
+brew update
+
+# Install:
+brew install gh
+
+# Finish:
+...
+
+# Update
+brew update && brew upgrade gh
+```
+
+```bash
+# Operate:
+$ gh auth login
+? What account do you want to log into? GitHub.com
+? What is your preferred protocol for Git operations? HTTPS
+? Authenticate Git with your GitHub credentials? Yes
+? How would you like to authenticate GitHub CLI? Paste an authentication token
+Tip: you can generate a Personal Access Token here https://github.com/settings/tokens
+The minimum required scopes are 'repo', 'read:org', 'workflow'.
+? Paste your authentication token: ****************************************
+- gh config set -h github.com git_protocol https
+✓ Configured git protocol
+✓ Logged in as packetdiver
+
+gh repo view packetdiver/dev-setup
+gh repo clone packetdiver/dev-setup
+
+```
 
 More tools with pipx:
 
