@@ -150,6 +150,11 @@ The minimum required scopes are 'repo', 'read:org', 'workflow'.
 gh repo view packetdiver/dev-setup
 gh repo clone packetdiver/dev-setup
 code README.md
+git add .
+git commit -m "my changes!"
+git push origin
+
+# Edit remote... - then local:
 
 
 ```
