@@ -126,7 +126,8 @@ brew update
 brew install gh
 
 # Finish:
-...
+gh config set editor "code --wait"
+gh config set git_protocol https
 
 # Update
 brew update && brew upgrade gh
@@ -148,6 +149,8 @@ The minimum required scopes are 'repo', 'read:org', 'workflow'.
 
 gh repo view packetdiver/dev-setup
 gh repo clone packetdiver/dev-setup
+code README.md
+
 
 ```
 
