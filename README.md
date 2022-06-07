@@ -159,20 +159,63 @@ git pull
 ```
 
 
+## More tools with pipx
+
+### [ptpython](https://github.com/prompt-toolkit/ptpython)
+
+```bash
+# Prepare:
+brew update && brew upgrade pipx
+
+# Install:
+pipx install ptpython
+pipx inject ptpython requests
+
+# Update
+pipx upgrade ptpython
+```
+
+
+### [cookiecutter](https://github.com/cookiecutter/cookiecutter)
+
+```bash
+# Prepare:
+brew update && brew upgrade pipx
+
+# Install:
+pipx install cookiecutter
+
+# Update
+pipx upgrade cookiecutter
+```
+
+
+### [jupyterlab](https://github.com/jupyterlab/jupyterlab)
+
+```bash
+# Prepare:
+brew update && brew upgrade pipx
+brew install pandoc
+brew install texlive
+
+# Install:
+pipx install --python python3.10 jupyterlab
+pipx inject jupyterlab pyppeteer   # export to Webpdf not possible? What's missing?
+pipx inject jupyterlab pandas
+
+# Update
+pipx upgrade jupyterlab
+```
 
 
 
-More tools with pipx:
-
+Olther tools:
 - black
-- cookiecutter
 - flake8
-- ipython -> pbpython?
-- jupyter / jupyter-lab
-- poetry
 - pylint
+- poetry
+- isort
 - pyinstaller ???
-- isort ?
 - 
 
 
