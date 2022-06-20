@@ -19,4 +19,6 @@ Some useful tools which can also be installed.
 
   Cross-platform, fast, feature-rich, GPU based terminal
 
+- [LazyDocker](https://github.com/jesseduffield/lazydocker)
 
+  The lazier way to manage everything docker
