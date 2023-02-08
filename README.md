@@ -208,6 +208,25 @@ pipx upgrade jupyterlab
 ```
 
 
+### [VisiData](https://www.visidata.org)
+
+[Help](https://www.visidata.org/docs/)
+
+
+```bash
+# Prepare:
+brew update && brew upgrade pipx
+
+# Install:
+pipx install visidata
+pipx inject visidata dpkt
+pipx inject visidata dnslib
+
+# Update
+pipx upgrade visidata
+```
+
+
 
 Olther tools:
 - black
@@ -217,5 +236,74 @@ Olther tools:
 - isort
 - pyinstaller ???
 - 
+
+
+## Other Tools
+
+### [Albert](https://github.com/albertlauncher/albert)
+
+[Help](https://albertlauncher.github.io/)
+
+```bash
+# Prepare:
+curl https://build.opensuse.org/projects/home:manuelschneid3r/public_key | sudo apt-key add -
+echo 'deb http://download.opensuse.org/repositories/home:/manuelschneid3r/xUbuntu_22.04/ /' | sudo tee /etc/apt/sources.list.d/home:manuelschneid3r.list
+sudo wget -nv https://download.opensuse.org/repositories/home:manuelschneid3r/xUbuntu_22.04/Release.key -O "/etc/apt/trusted.gpg.d/home:manuelschneid3r.asc"
+sudo apt update
+
+# Install:
+sudo apt install albert
+
+# Update
+sudo apt --only-upgrade install albert
+```
+
+
+### [freshenv](https://github.com/raiyanyahya/freshenv)
+
+[Help](https://freshenv.io/)
+
+```bash
+# Install:
+snap install freshenv 
+snap connect freshenv:docker docker:docker-daemon   # give it access to the docker interface
+
+# Update
+??? 
+
+# Operate:
+$ fr --version   # check version
+  freshenv, version 1.2.4
+
+$ fr check
+✔ Docker installed and running.
+✔ No test images found. Moving on...
+bin   dev   etc   home  proc  root  sys   tmp   usr   var
+✔ Succesfully provisioned test environment.
+✔ Test images removed.
+🌅  All test passed. Everything looks good.
+
+
+
+```
+
+
+
+### [lazydocker](https://github.com/jesseduffield/lazydocker)
+
+
+```bash
+# Prepare:
+brew update
+
+# Install:
+brew install lazydocker
+
+# Update
+
+
+# Operate:
+
+```
 
 
