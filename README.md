@@ -1,6 +1,19 @@
 # dev-setup
 Description of my dev setup (based on my Ubuntu 22.04 LTS installation).
 
+## Installed Tools
+
+### Ubuntu Software (Snap Store)
+
+- Midnight Commander
+- Tilix
+- Chromium Web Browser
+- KeePassXC
+
+### Direct (command line)
+
+- [Visual Studio Code](https://code.visualstudio.com/download)
+
 
 ## [Homebrew](https://brew.sh/)
 
